@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JB Auto Detailing - Booking Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JB Auto.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.jpg" alt="JB Auto Detailing Logo">
+    <h1 style="color: red; font-weight: bold; margin-right: 20px;">JB Auto Detailing</h1>
+    <nav>
+
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="pricing.html"><strong>Pricing</strong></a>
+            <a href="photos.html"><strong>Photos</strong></a>
+            <a href="booking.html"><strong>Book Now</strong></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Booking Form</h1>
+
+        <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"   
+ required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone   
+ Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label>Vehicle   
+ Information:</label><br>
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make" required><br><br>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required><br><br>
+
+            <label for="year">Year:</label>   
+
+            <input type="number" id="year" name="year" required><br><br>
+
+            <label>Preferred   
+ Service:</label><br>
+            <input type="radio" id="full-detail" name="service" value="Full Detail">
+            <label for="full-detail">Full Detail</label><br>
+            <input type="radio" id="basic-detail" name="service" value="Basic Detail">
+            <label for="basic-detail">Basic Detail</label><br>
+            <input type="radio" id="shampoo-carpet" name="service" value="Shampoo Carpet & Seats">
+            <label for="shampoo-carpet">Shampoo Carpet & Seats</label><br>
+
+            <label>Additional Services:</label><br>
+            <input type="checkbox" id="ceramic-coating" name="additional_services[]" value="Ceramic Coating">
+            <label for="ceramic-coating">Ceramic Coating</label><br>
+            <input type="checkbox" id="window-tinting" name="additional_services[]" value="Window Tinting">
+            <label for="window-tinting">Window Tinting</label><br>
+            <input type="checkbox" id="interior-deep-clean" name="additional_services[]" value="Interior Deep Clean">
+            <label for="interior-deep-clean">Interior Deep Clean</label><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+            <label for="preferred-date">Preferred Date:</label>
+            <input type="date" id="preferred-date" name="preferred_date"><br><br>
+
+            <label for="preferred-time">Preferred Time:</label>
+            <select id="preferred-time" name="preferred_time">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select><br><br>   
+
+
+            <input type="submit"   
+ value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; JB Auto Detailing</p>
+    </footer>
+
+</body>
+</html>
